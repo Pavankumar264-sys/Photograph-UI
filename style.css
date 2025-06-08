@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main_box {
+    background: url("photo.jpg");
+    height: 100vh;
+    background-size: cover;
+}
+
+.btn_one {
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    left: 15px;
+    line-height: 60px;
+    position: absolute;
+    top: 0;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.sidebar_menu  {
+    position: fixed;
+    height: 100vh;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+    left: -300px;
+    transition: all 0.5s ease;
+}
+.sidebar_menu .menu li:hover {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    border-radius: 5px; /* optional: makes it look smoother */
+    background-color: rgba(255, 255, 255, 0.1); /* optional: light background on hover */
+}
+
+
+.sidebar_menu .logo {
+    position: absolute;
+    width: 100%;
+    line-height: 60px;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.5);
+    height:60px;
+}
+
+.sidebar_menu .logo a {
+    position: absolute;
+    left: 50px;
+    color: rgb(218, 213, 213);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.sidebar_menu .btn_two {
+    color: gray;
+    font-size: 30px;
+    line-height: 60px;
+    position: absolute;
+    left: 270px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.sidebar_menu .menu {
+    position: absolute;
+    width: 100%;
+    color: white;
+    top: 80px;
+}
+
+.sidebar_menu .menu li {
+    list-style: none;
+    margin-top: 6px;
+    padding: 14px 20px;
+}
+
+.sidebar_menu .menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.sidebar_menu .menu i {
+    font-size: 20px;
+    padding-right: 8px;
+}
+
+.sidebar_menu .social_media {
+    color: white;
+    opacity: 0.5;
+    position: absolute;
+    bottom: 50px;
+    left: 25%;
+}
+.sidebar_menu .social_media i {
+    color: white;
+    opacity: 0.5;
+    padding: 0 5px;
+}
+#check{
+    display: none;
+}
+
+.sidebar_menu .social_media ul {
+    list-style: none;
+    display: flex;
+}
+
+.sidebar_menu .social_media ul li {
+    margin: 0 10px;
+}
+
+.sidebar_menu .social_media ul li a {
+    color: white;
+    font-size: 24px;
+}
+.sidebar_menu .menu li:hover {
+    box-shadow: rgba(255, 255, 255, 0.5);
+}
+.btn_one i:hover {
+    font-size:40px;
+}
+.btn_two i:hover {
+    font-size: 30px;
+}
+.sidebar_menu .social_media i:hover{
+    opacity: 1.5;
+    transform: scale(1.5);
+}
+
+
+#check:checked ~.sidebar_menu {
+  left: 0;
+}
+#check:checked ~.btn_one i {
+ opacity: 0;
+}
+#check:checked ~.sidebar_menu .btn_two {
+    opacity: 1;;
+}
+
